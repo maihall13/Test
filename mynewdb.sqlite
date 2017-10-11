@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS history;
+
+
+CREATE TABLE users (
+  userID INT PRIMARY KEY,
+  userName TEXT,
+  password TEXT
+);
+
+CREATE TABLE history (
+  userID INT PRIMARY KEY,
+  wordSearched TEXT
+);
